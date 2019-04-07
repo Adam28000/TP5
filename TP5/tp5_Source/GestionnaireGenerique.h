@@ -11,8 +11,8 @@
 
 using namespace  std;
 
-//              T   = pair<string, Plat*> ou Table*; 
-//              C   = map<string, Plat*> ou set<Table*>; 
+//  T   = pair<string, Plat*> ou Table*; 
+//  C   = map<string, Plat*> ou set<Table*>; 
 template<typename T, typename C>
 class GestionnaireGenerique
 {

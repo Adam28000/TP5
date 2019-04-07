@@ -11,7 +11,7 @@
 #include "PlatBioVege.h"
 
 
-
+template<typename T, typename C>
 void GestionnairePlats::lirePlats(const string& nomFichier, TypeMenu type)
 {
 	LectureFichierEnSections fichier{ nomFichier };
@@ -19,7 +19,7 @@ void GestionnairePlats::lirePlats(const string& nomFichier, TypeMenu type)
 	while (!fichier.estFinSection())
 		ajouter(lirePlatDe(fichier));
 }
-
+template<typename T, typename C>
 pair<string, Plat*> GestionnairePlats::lirePlatDe(LectureFichierEnSections& fichier)
 {
 	auto lectureLigne = fichier.lecteurDeLigne();

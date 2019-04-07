@@ -1,0 +1,176 @@
+﻿  Boisson.cpp
+  Client.cpp
+  ClientOccasionnel.cpp
+  ClientPrestige.cpp
+x:\bureau\tp5\tp5\tp5_source\gestionnaireplats.h(22): error C2955: 'GestionnaireGenerique' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+  x:\bureau\tp5\tp5\tp5_source\gestionnairegenerique.h(18): note: voir la déclaration de 'GestionnaireGenerique'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C2143: erreur de syntaxe : absence de ';' avant '*'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C2238: jetons inattendus avant ';'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C2143: erreur de syntaxe : absence de ';' avant '*'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C2238: jetons inattendus avant ';'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+  ClientRegulier.cpp
+  GestionnairePlats.cpp
+x:\bureau\tp5\tp5\tp5_source\gestionnaireplats.h(22): error C2955: 'GestionnaireGenerique' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+  x:\bureau\tp5\tp5\tp5_source\gestionnairegenerique.h(18): note: voir la déclaration de 'GestionnaireGenerique'
+x:\bureau\tp5\tp5\tp5_source\gestionnaireplats.cpp(20): error C3861: 'ajouter' : identificateur introuvable
+  GestionnaireTables.cpp
+x:\bureau\tp5\tp5\tp5_source\gestionnairetables.cpp(18): error C3861: 'ajouter' : identificateur introuvable
+  LectureFichierEnSections.cpp
+  main.cpp
+x:\bureau\tp5\tp5\tp5_source\gestionnaireplats.h(22): error C2955: 'GestionnaireGenerique' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+  x:\bureau\tp5\tp5\tp5_source\gestionnairegenerique.h(18): note: voir la déclaration de 'GestionnaireGenerique'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C2143: erreur de syntaxe : absence de ';' avant '*'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C2238: jetons inattendus avant ';'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C2143: erreur de syntaxe : absence de ';' avant '*'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C2238: jetons inattendus avant ';'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(24): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(24): error C2227: la partie gauche de '->getType' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(25): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(25): error C2227: la partie gauche de '->getType' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(26): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(26): error C2227: la partie gauche de '->getType' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(32): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(32): error C2227: la partie gauche de '->getNombreElements' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(33): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(33): error C2227: la partie gauche de '->getNombreElements' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(34): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(34): error C2227: la partie gauche de '->getNombreElements' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(35): error C2039: 'getNombreElements' : n'est pas membre de 'GestionnaireTables'
+  x:\bureau\tp5\tp5\tp5_source\gestionnairetables.h(16): note: voir la déclaration de 'GestionnaireTables'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(39): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(39): error C2227: la partie gauche de '->ajouter' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(40): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(40): error C2227: la partie gauche de '->trouverPlat' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(46): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(46): error C2227: la partie gauche de '->trouverPlatMoinsCher' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(46): error C2227: la partie gauche de '->getNom' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(49): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(49): error C2227: la partie gauche de '->trouverPlatPlusCher' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(49): error C2227: la partie gauche de '->getNom' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(52): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(52): error C2227: la partie gauche de '->getPlatsEntre' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\main.cpp(63): error C2039: 'ajouter' : n'est pas membre de 'GestionnaireTables'
+  x:\bureau\tp5\tp5\tp5_source\gestionnairetables.h(16): note: voir la déclaration de 'GestionnaireTables'
+x:\bureau\tp5\tp5\tp5_source\main.cpp(90): warning C4018: '<' : incompatibilité signed/unsigned
+  Menu.cpp
+  Plat.cpp
+  PlatBio.cpp
+  PlatBioVege.cpp
+  PlatVege.cpp
+  Restaurant.cpp
+x:\bureau\tp5\tp5\tp5_source\gestionnaireplats.h(22): error C2955: 'GestionnaireGenerique' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+  x:\bureau\tp5\tp5\tp5_source\gestionnairegenerique.h(18): note: voir la déclaration de 'GestionnaireGenerique'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C2143: erreur de syntaxe : absence de ';' avant '*'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(47): error C2238: jetons inattendus avant ';'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C2143: erreur de syntaxe : absence de ';' avant '*'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(71): error C2238: jetons inattendus avant ';'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(80): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(81): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2059: erreur de syntaxe : '>'
+x:\bureau\tp5\tp5\tp5_source\restaurant.h(82): error C2976: 'owner' : nombre d'arguments modèle insuffisant
+  x:\bureau\tp5\tp5\tp5_source\pointers.h(10): note: voir la déclaration de 'owner'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(22): error C2061: erreur de syntaxe : identificateur 'Menu'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(22): error C2143: erreur de syntaxe : absence de ';' avant '{'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(22): error C2612: '}' de fin non conforme dans une liste d'initialiseurs de base/membre
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(22): error C2059: erreur de syntaxe : ','
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(23): error C2143: erreur de syntaxe : absence de ';' avant '{'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(23): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(23): error C2059: erreur de syntaxe : ','
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(24): error C2143: erreur de syntaxe : absence de ';' avant '{'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(24): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(24): error C2059: erreur de syntaxe : ','
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(25): error C2143: erreur de syntaxe : absence de ';' avant '{'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(25): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(26): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(34): error C2541: 'delete' : impossible de détruire des objets qui ne sont pas des pointeurs
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(35): error C2541: 'delete' : impossible de détruire des objets qui ne sont pas des pointeurs
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(36): error C2541: 'delete' : impossible de détruire des objets qui ne sont pas des pointeurs
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(70): error C2511: 'double Restaurant::getFraisLivraison(int) const' : impossible de trouver la fonction membre surchargée dans 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(71): error C2597: référence non conforme à un membre non static 'Restaurant::fraisLivraison_'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(71): error C3867: 'Restaurant::fraisLivraison_' : syntaxe non-standard ; utilisez '&' pour créer un pointeur vers un membre
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(71): error C2109: un indice requiert un type tableau ou pointeur
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(102): error C2065: 'Menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(102): error C2065: 'menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(102): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(103): error C3861: 'getNomTypeMenu' : identificateur introuvable
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(104): error C2065: 'menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(106): error C2065: 'menu' : identificateur non déclaré
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(106): error C2227: la partie gauche de '->trouverPlatMoinsCher' doit pointer vers un type class/struct/union/générique
+  x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(106): note: le type est 'unknown-type'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(106): error C2227: la partie gauche de '->afficherPlat' doit pointer vers un type class/struct/union/générique
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(115): error C3861: 'menuActuel' : identificateur introuvable
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(115): error C2227: la partie gauche de '->trouverPlat' doit pointer vers un type class/struct/union/générique
+  x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(115): note: le type est 'unknown-type'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(179): error C2143: erreur de syntaxe : absence de ';' avant '*'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(179): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(179): error C2039: 'getMenu' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(180): error C2270: 'getMenu' : modificateurs non autorisés sur les fonctions non membres
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(180): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(180): error C2059: erreur de syntaxe : '{'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(180): error C2143: erreur de syntaxe : absence de ';' avant '{'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(180): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(190): error C2143: erreur de syntaxe : absence de ';' avant '*'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(190): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(190): error C2086: 'int Menu' : redéfinition
+  x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(179): note: voir la déclaration de 'Menu'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(190): error C2039: 'menuActuel' : n'est pas membre de 'Restaurant'
+  x:\bureau\tp5\tp5\tp5_source\restaurant.h(24): note: voir la déclaration de 'Restaurant'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(191): error C2270: 'menuActuel' : modificateurs non autorisés sur les fonctions non membres
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(191): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(191): error C2059: erreur de syntaxe : '{'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(191): error C2143: erreur de syntaxe : absence de ';' avant '{'
+x:\bureau\tp5\tp5\tp5_source\restaurant.cpp(191): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+  Table.cpp
+  Vege.cpp
+  Génération de code en cours...
