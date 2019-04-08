@@ -16,10 +16,8 @@ class FoncteurPlatMoinsCher
 { // TODO
 
 public:
-	bool operator()(Plat* plat1, Plat* plat2 ) const
-	{
-		return plat1->getPrix() <= plat2->getPrix();
-
+	bool operator()(const pair<string, Plat*>& plat1, const pair<string, Plat*>& plat2) const {
+		return (*plat1.second < *plat2.second);
 	}
 	/*void setPlat1(Plat* plat)
 	{
@@ -58,15 +56,6 @@ public:
 		}
 	}
 
-
-	void setBorneInf(double borne)
-	{
-		borneInf_ = borne;
-	}
-	void setBorneSup(double borne)
-	{
-		borneSup_ = borne;
-	}
    // TODO
 
 

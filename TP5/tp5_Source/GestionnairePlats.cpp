@@ -11,7 +11,88 @@
 #include "PlatBioVege.h"
 
 
-template<typename T, typename C>
+GestionnairePlats::GestionnairePlats(const string& nomFichier, TypeMenu type) :type_(type)
+{
+	lirePlats(nomFichier, type);
+}
+
+GestionnairePlats::GestionnairePlats(GestionnairePlats* gestionnaire)
+{
+	type_ = gestionnaire->getType();
+	for (map<string, Plat*>::iterator it = gestionnaire->conteneur_.begin(); it != gestionnaire->conteneur_.end(); it++)
+	{
+		Plat* nouveauPlatPointeur = allouerPlat(it->second);
+		conteneur_[it->first] = nouveauPlatPointeur;
+	}
+
+
+}
+
+GestionnairePlats::~GestionnairePlats()
+{
+	for (map<string, Plat*>::iterator it = conteneur_.begin(); it != conteneur_.end(); it++)
+	{
+		delete it->second;
+	}
+
+
+}
+
+TypeMenu GestionnairePlats::getType() const
+{
+	return type_;
+}
+
+Plat* GestionnairePlats::allouerPlat(Plat* plat)
+{
+	Plat * nouveauPlat = new Plat(*plat);
+	return nouveauPlat;
+}
+
+Plat* GestionnairePlats::trouverPlatMoinsCher() const
+{
+	Plat* platMoinsCher = min_element(conteneur_.begin(), conteneur_.end(), FoncteurPlatMoinsCher())->second;
+	return platMoinsCher;
+
+}
+
+Plat* GestionnairePlats::trouverPlatPlusCher() const
+{
+	auto p = [](pair<string, Plat*> Pair1, pair<string, Plat*> Pair2) {
+		return (Pair1.second->getPrix() > Pair2.second->getPrix());
+	};
+
+	return (max_element(conteneur_.begin(), conteneur_.end(), p))->second;
+}
+
+Plat* GestionnairePlats::trouverPlat(const string& nom) const
+{
+	auto it = conteneur_.find(nom); // retourne iterateur pointant a l'element qui contient la cle
+	if (it != conteneur_.end())
+		return it->second;
+	else
+		return nullptr;
+}
+
+vector<pair<string, Plat*>> GestionnairePlats::getPlatsEntre(double borneInf, double borneSup)
+{
+	FoncteurIntervalle foncteur(borneInf, borneSup);
+	vector<pair<string, Plat*>> tableauPlatIntervalle;
+
+	for (map<string, Plat*>::iterator it = conteneur_.begin(); it != conteneur_.end(); it++)
+	{
+		if (foncteur(it->second))//Si le prix du Plat est dans lintervalle
+		{
+			pair<string, Plat*> nouvelElementTableau;
+			nouvelElementTableau.first = it->first;
+			nouvelElementTableau.second = it->second;
+			tableauPlatIntervalle.push_back(nouvelElementTableau);
+		}
+
+	}
+	return tableauPlatIntervalle;
+}
+
 void GestionnairePlats::lirePlats(const string& nomFichier, TypeMenu type)
 {
 	LectureFichierEnSections fichier{ nomFichier };
@@ -19,7 +100,7 @@ void GestionnairePlats::lirePlats(const string& nomFichier, TypeMenu type)
 	while (!fichier.estFinSection())
 		ajouter(lirePlatDe(fichier));
 }
-template<typename T, typename C>
+
 pair<string, Plat*> GestionnairePlats::lirePlatDe(LectureFichierEnSections& fichier)
 {
 	auto lectureLigne = fichier.lecteurDeLigne();
@@ -49,4 +130,10 @@ pair<string, Plat*> GestionnairePlats::lirePlatDe(LectureFichierEnSections& fich
 	return pair<string, Plat*>(plat->getNom(), plat);
 }
 
-
+void GestionnairePlats::afficherPlats(ostream& os)
+{
+	for (map<string, Plat*>::iterator it = conteneur_.begin(); it != conteneur_.end(); it++)
+	{
+		os << it->second << endl;
+	}
+}

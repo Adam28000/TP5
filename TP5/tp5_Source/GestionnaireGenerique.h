@@ -22,10 +22,10 @@ public:
 		return conteneur_;
 	}//TODO
 
-	void ajouter(T t)
-	{
-		conteneur_[t.first] = t.second;
-	}//TODO
+	void ajouter(T t) {
+		conteneur_.insert(t);
+
+	}
 	int getNombreElements() const
 	{
 		return conteneur_.size();
