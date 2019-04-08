@@ -4,6 +4,7 @@
 */
 #ifndef VEGE_H
 #define VEGE_H
+
 #include <iostream>
 #include <string_view>
 #include <string>
@@ -14,7 +15,7 @@ class Vege
 public:
 	Vege(string nom, double vitamines, double proteines, double mineraux);
 	double getVitamines();
-	double getProteines();
+		double getProteines();
 	double getMineraux();
 	void setVitamines(double vitamines);
 	void setProteines(double proteines);

@@ -15,17 +15,18 @@ class Table;
 class Client
 {
 public:
+	
 	Client();
+	
 	Client(string_view nom, string_view prenom, int tailleGroupe);
+	
 	virtual ~Client() {};
-	//getters
 	int getTailleGroupe() const;
 	string getNom() const;
 	string getPrenom() const;
 	Table * getTable()const;
-	// setters
+	
 	void setTable(Table * table);
-	//affichage
 	virtual int getNbPoints() const = 0;
 	virtual void afficherClient(ostream & os) const = 0;
 	virtual double getReduction(const Restaurant & res, double montant, bool estLivraison) = 0;

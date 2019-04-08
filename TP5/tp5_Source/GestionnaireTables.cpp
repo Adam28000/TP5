@@ -8,6 +8,33 @@
 #include "GestionnaireTables.h"
 #include "LectureFichierEnSections.h"
 
+
+Table * GestionnaireTables::getTable(int id) const
+{
+
+	/*for (auto it = conteneur_.begin(); it != conteneur_.end(); it++) {
+		if ((*it)->getId() == id)
+			return *it;
+	}
+	return nullptr;*/
+	auto cmp_ID = [=](Table*Table) {return (Table->getId() == id); };
+	Table* t= *find_if(conteneur_.begin(), conteneur_.end(), cmp_ID);
+	if (t == nullptr) { return nullptr; }
+	else return t;
+}
+Table * GestionnaireTables::getMeilleureTable(int tailleGroupe) const
+{
+	vector<Table*> t;
+	auto sup_Egale_TailleGroupe = [=](Table*Table) {return (Table->getNbPlaces()>= tailleGroupe&& !Table->estOccupee()); };
+	copy_if(conteneur_.begin(), conteneur_.end(), back_inserter(t), sup_Egale_TailleGroupe);
+	if (t.empty()) { return nullptr; }
+
+	auto cmp_NbPlaces = [](Table*Table1, Table*Table2) {return(Table1->getNbPlaces() < Table2->getNbPlaces());};
+	auto min= min_element(t.begin(), t.end(),cmp_NbPlaces);
+
+	return getTable((*min)->getId());
+}
+
 void GestionnaireTables::lireTables(const string& nomFichier)
 {
 	LectureFichierEnSections fichier{ nomFichier };
@@ -19,48 +46,15 @@ void GestionnaireTables::lireTables(const string& nomFichier)
 	}
 }
 
-Table* GestionnaireTables::getTable(int id) const
-{
-	Table* pointeurTable(nullptr);
-	for (set<Table*>::iterator it = conteneur_.begin(); it != conteneur_.end(); it++)
-	{
-		if (id == (*it)->getId())
-		{
-			pointeurTable = *it;
-			break;
-		}
-	}
-	return pointeurTable;
-}
-Table* GestionnaireTables::getMeilleureTable(int tailleGroupe) const
-{
-	Table* pointeurTable(nullptr);
-	int nombreOptimise(NULL);
-	for (set<Table*>::iterator it = conteneur_.begin(); it != conteneur_.end(); it++)
-	{
-		if (it == conteneur_.begin())
-		{
-			nombreOptimise = (*it)->getNbPlaces();
-			pointeurTable = *it;
-		}
-		else if (nombreOptimise > (*it)->getNbPlaces())
-		{
-			nombreOptimise = (*it)->getNbPlaces();
-			pointeurTable = *it;
-		}
-	}
-	return pointeurTable;
 
-}
-void GestionnaireTables::afficherTables(ostream& os) const
+GestionnaireTables & GestionnaireTables::operator+=(Table* table)
 {
-	for (set<Table*>::iterator it = conteneur_.begin(); it != conteneur_.end(); it++)
-	{
-		os << *(*it) << endl;
-	}
-} 
- 
-GestionnaireTables& GestionnaireTables::operator+=(Table* table) {
-	ajouter(table);
-	return *this;
+	conteneur_.insert(table);
+   return *this;
 }
+
+void GestionnaireTables::afficherTables(ostream & os) const
+{
+	copy(conteneur_.begin(), conteneur_.end(), ostream_iterator<Table*>(os,"\n"));
+}
+

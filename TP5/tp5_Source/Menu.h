@@ -1,8 +1,8 @@
 
 
 
-//////////// A SUPPRIMER ///////////////////
-//Menu a ete remplace par le gestionnaire
+// A SUPPRIMER //
+//Menu a ete remplace par le GestionnairePlats
 
 
 

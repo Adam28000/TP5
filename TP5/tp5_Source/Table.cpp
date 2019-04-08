@@ -13,11 +13,12 @@ Table::Table(int id, int nbPlaces) :
 	nbClientsATable_{ 0 },
 	clientPrincipal_{ nullptr }
 {
+
 }
 
 // Getters.
 int Table::getId() const
-{
+ {
 	return id_;
 }
 

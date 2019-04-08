@@ -15,12 +15,10 @@ public:
 	ClientRegulier(string_view nom, string_view prenom, int tailleGroupe, int nbPoints);
 	virtual ~ClientRegulier();
 
-	//Accesseurs
 	virtual int getNbPoints() const;
 
-	//Autres Methodes
 	void augmenterNbPoints(int bonus);
-	virtual void afficherClient(ostream & os) const;
+		virtual void afficherClient(ostream & os) const;
 	virtual double getReduction(const Restaurant & res, double montant, bool estLivraison);
 
 protected:

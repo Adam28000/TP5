@@ -16,19 +16,17 @@ using namespace std;  //? On ne devrait normalement pas faire de "using" global 
 
 class Plat {
 public:
-	// constructeur
+	
 	Plat(string_view nom = "inconnu", double prix = 0, double cout = 0);
+
 	virtual ~Plat();
-	//getters 
 	string getNom() const;
 	double getPrix() const;
 	double getCout() const;
 
-	//setters 
 	void setNom(string nom);
 	void setPrix(double prix);
 
-	//methodes en plus
 	virtual double getPrixRevient();
 	virtual Plat *  clone() const;
 	bool operator < (const Plat& plat) const;

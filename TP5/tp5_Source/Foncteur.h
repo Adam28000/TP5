@@ -13,54 +13,50 @@ using namespace std;
 
 
 class FoncteurPlatMoinsCher
-{ // TODO
+{ 
 
 public:
-	bool operator()(const pair<string, Plat*>& plat1, const pair<string, Plat*>& plat2) const {
-		return (*plat1.second < *plat2.second);
+	//--------------------------------------------------------------
+	//Nom: FoncteurPlatMoinsCher()
+	//Description: Constructeur sans parametres du foncteur FoncteurPlatMoinsCher
+	//Elle ne retourne rien
+	//--------------------------------------------------------------
+	FoncteurPlatMoinsCher() {};
+	//Nom:FoncteurPlatMoinsCher()
+	//Description:operator()(pair<string, Plat* >plat1, pair<string, Plat*>plat2)
+	//Parametre 1 : pair<string, Plat*>plat1, plat 1 à comparer
+	//Parametre 2 : pair<string, Plat*>plat2, plat 2 à comparer 
+	//Elle retourne vrai si le prix du plat 2 est supérieur a celui
+	//du plat 1 et faux sinon
+	//----------------------------------------------------------------
+     bool operator()(pair<string, Plat* >plat1, pair<string, Plat*>plat2){
+		return plat1.second->getPrix() <plat2.second->getPrix();
 	}
-	/*void setPlat1(Plat* plat)
-	{
-		plat1_ = plat;
-	}
-	void setPlat2(Plat* plat)
-	{
-		plat2_ = plat;
-	}
-private:
-	Plat* plat1_;
-	Plat* plat2_;
-	*/
 
-    
 };
 
 class FoncteurIntervalle
 {
+         // TODO
 public:
-	FoncteurIntervalle(double borneInf, double borneSup):borneInf_(borneInf),borneSup_(borneSup)
-	{
-
+	///Nom:FoncteurIntervalle(double inf, double Sup)
+	//Description:FoncteurIntervalle(double inf, double sup)
+	//Constructeur avec parametres du foncteur FoncteurIntervalle
+	//qui initialise les attributs borne_Inf_ et borne_Sup_
+	//Elle ne retourne rien
+	//--------------------------------------------------------------
+	FoncteurIntervalle(double inf, double Sup) :borne_Inf_(inf), borne_Sup_(Sup){};
+	//Nom:bool operator()(pair<string, Plat* > p)
+	//Description:operator()(pair<string, Plat*>p)
+	//Parametre : pair<string, Plat*>p, 
+	//Elle retourne vrai si le prix du plat 2 est compris dans
+	//l'intervalle définint par les attributs
+	//----------------------------------------------------------------
+	bool operator()(pair<string, Plat* > p){
+		return (borne_Inf_ <= p.second->getPrix() && p.second->getPrix()<= borne_Sup_);
 	}
-
-	bool operator()(Plat* platDuConteneur) const
-	{
-		double prixPlat = platDuConteneur->getPrix();
-		if (prixPlat > borneSup_ || prixPlat < borneInf_)
-		{
-			return false;
-		}
-		else
-		{
-			return true;
-		}
-	}
-
-   // TODO
-
-
-public:
-	double borneInf_;
-	double borneSup_;
+private:
+double  borne_Inf_;
+double  borne_Sup_;
 };
 

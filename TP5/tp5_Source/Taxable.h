@@ -7,6 +7,7 @@
 
 #ifndef TAXABLE_H
 #define TAXABLE_H
+
 class Taxable
 {
 public:

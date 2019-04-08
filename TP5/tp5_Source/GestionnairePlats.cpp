@@ -19,12 +19,7 @@ GestionnairePlats::GestionnairePlats(const string& nomFichier, TypeMenu type) :t
 GestionnairePlats::GestionnairePlats(GestionnairePlats* gestionnaire)
 {
 	type_ = gestionnaire->getType();
-	for (map<string, Plat*>::iterator it = gestionnaire->conteneur_.begin(); it != gestionnaire->conteneur_.end(); it++)
-	{
-		Plat* nouveauPlatPointeur = allouerPlat(it->second);
-		conteneur_[it->first] = nouveauPlatPointeur;
-	}
-
+	conteneur_ = gestionnaire->getConteneur();
 
 }
 
@@ -32,10 +27,9 @@ GestionnairePlats::~GestionnairePlats()
 {
 	for (map<string, Plat*>::iterator it = conteneur_.begin(); it != conteneur_.end(); it++)
 	{
-		delete it->second;
+		delete (*it).second;
 	}
-
-
+	conteneur_.clear();
 }
 
 TypeMenu GestionnairePlats::getType() const

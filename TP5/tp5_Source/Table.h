@@ -14,14 +14,12 @@
 class Client;
 class Table {
 public:
-	// Constructeur
 	Table(int id = -1, int nbPlaces = 1);
 
-	// Getters
 	int getId() const;
 	int getNbPlaces() const;
 	bool estOccupee() const;
-	bool estPleine() const;
+		bool estPleine() const;
 	int getNbClientsATable() const;
 	vector<Plat*> getCommande() const;
 	Client* getClientPrincipal() const;
@@ -29,14 +27,15 @@ public:
 
 
 	// Setters
+	//-----------------------------------------------------
 	void libererTable();
+	//-----------------------------------------------------
 	void placerClients(int nbClients);
-	void setId(int id);
+		void setId(int id);
 	void setClientPrincipal(Client* clientPrincipal);
 
-	// Autres methodes
+	
 	void commander(Plat* plat);
-
 	friend ostream& operator<<(ostream& os, const Table& table);
 
 private:
